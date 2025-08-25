@@ -6,6 +6,7 @@ from telegram.ext import (
     Application, CommandHandler, MessageHandler, filters, ContextTypes
 )
 
+# لازم تحط TELEGRAM_TOKEN في Environment Variables على Render
 TOKEN = os.environ.get("TELEGRAM_TOKEN")
 if not TOKEN:
     raise RuntimeError("Set TELEGRAM_TOKEN env variable before running.")
